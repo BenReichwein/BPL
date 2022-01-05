@@ -1,6 +1,6 @@
-key=abcdefg
+key=abcdefg;
 [User]
-userName=BenReich
-keyFile=~/path/to/keyfile
+userName=BenReich;
+keyFile=~/path/to/keyfile;
 [Servers]
-server1=localhost:8080
+server1=localhost:8080;

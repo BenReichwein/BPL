@@ -13,7 +13,7 @@ key that will be assigned a value.
 */
 func LexKey(lexer *Lexer) LexFn {
 	for {
-		if strings.HasPrefix(lexer.InputToEnd(), lexertoken.EQUAL_SIGN) {
+		if (strings.HasPrefix(lexer.InputToEnd(), lexertoken.ASSIGN)) {
 			lexer.Emit(lexertoken.TOKEN_KEY)
 			return LexEqualSign
 		}

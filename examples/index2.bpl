@@ -1,4 +1,4 @@
-key=hijklmno
+key=hijklmno;
 [User]
 userName=BenR
 keyFile=~/path/to/keyfile

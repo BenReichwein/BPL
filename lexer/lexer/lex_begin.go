@@ -13,7 +13,7 @@ beginning with a key/value assignment or a section.
 func LexBegin(lexer *Lexer) LexFn {
 	lexer.SkipWhitespace()
 
-	if strings.HasPrefix(lexer.InputToEnd(), lexertoken.LEFT_BRACKET) {
+	if strings.HasPrefix(lexer.InputToEnd(), lexertoken.LBRACKET) {
 		return LexLeftBracket
 	} else {
 		return LexKey

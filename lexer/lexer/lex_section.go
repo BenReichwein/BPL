@@ -9,7 +9,7 @@ import (
 
 /*
 This lexer function emits a TOKEN_SECTION with the name of an
-INI file section header.
+BPS file section header.
 */
 func LexSection(lexer *Lexer) LexFn {
 	for {
@@ -17,7 +17,7 @@ func LexSection(lexer *Lexer) LexFn {
 			return lexer.Errorf(errors.LEXER_ERROR_MISSING_RIGHT_BRACKET)
 		}
 
-		if strings.HasPrefix(lexer.InputToEnd(), lexertoken.RIGHT_BRACKET) {
+		if strings.HasPrefix(lexer.InputToEnd(), lexertoken.RBRACKET) {
 			lexer.Emit(lexertoken.TOKEN_SECTION)
 			return LexRightBracket
 		}
